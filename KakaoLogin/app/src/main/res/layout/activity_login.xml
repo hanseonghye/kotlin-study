@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginActivity">
+
+    <TextView
+            android:id="@+id/tvLoginTitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintLeft_toLeftOf="@+id/kakaoLoginButton1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="카카오에서 제공하는 로그인 버튼\n(com.kakao.usermgmt.LoginButton)"/>
+
+    <com.kakao.usermgmt.LoginButton
+            android:id="@+id/kakaoLoginButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLoginTitle1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
